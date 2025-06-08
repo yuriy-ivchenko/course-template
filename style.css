@@ -1,0 +1,98 @@
+/* Базові стилі */
+body {
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f8f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: #2c3e50;
+}
+
+h1 {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+}
+
+h2 {
+  margin-top: 1.5rem;
+  font-size: 1.6rem;
+}
+
+/* Навігаційна панель модулів */
+nav#module-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+  background-color: #dceef2;
+  border-bottom: 2px solid #ccc;
+}
+
+nav#module-list button {
+  padding: 0.6rem 1.2rem;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+nav#module-list button:hover {
+  background-color: #2980b9;
+}
+
+/* Секція тем */
+section#topics-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+ul#topics-list {
+  list-style: none;
+  padding: 0;
+}
+
+ul#topics-list li {
+  background: #f0f7fa;
+  margin-bottom: 0.75rem;
+  padding: 1rem;
+  border-left: 6px solid #3498db;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+ul#topics-list li:hover {
+  background-color: #e4f0f5;
+}
+
+ul#topics-list li strong {
+  display: block;
+  font-size: 1.1rem;
+  color: #2c3e50;
+}
+
+/* Адаптивність */
+@media (max-width: 600px) {
+  nav#module-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section#topics-section {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
